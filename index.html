@@ -5,7 +5,7 @@
   </head>
   <body>
     <script>
-      document.cookie = "thirdparty=yes;SameSite=None";
+      document.cookie = "thirdparty=yes;SameSite=None;Secure";
       if (window.parent) {
         if (/thirdparty=yes/.test(document.cookie)) {
           window.parent.postMessage("MM:3PCsupported", "*");
