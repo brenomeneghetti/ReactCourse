@@ -1,0 +1,20 @@
+<!-- saved from url=(0083)https://testcalix.bigmachines.com/bmfsweb/calix/image/HTML_Pages/occCookieTest.html -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <script>
+      document.cookie = "thirdparty=yes;SameSite=None";
+      if (window.parent) {
+        if (/thirdparty=yes/.test(document.cookie)) {
+          window.parent.postMessage("MM:3PCsupported", "*");
+        } else {
+          window.parent.postMessage("MM:3PCunsupported", "*");
+        }
+      } else {
+        console.log("HUm, got it");
+      }
+    </script>
+  </body>
+</html>
